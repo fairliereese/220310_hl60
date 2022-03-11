@@ -9,6 +9,8 @@
 #SBATCH --mail-type=START,END
 #SBATCH --mem=64G
 
+conda activate swan_env
+
 # input tab-separated file with 
 # swangraph \t column \t cond1 \t cond2 \t test \t ofname
 ifile=$1
