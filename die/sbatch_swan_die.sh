@@ -23,6 +23,6 @@ test=`head -${i} $ifile | tail -1 | cut -f5`
 fname=`head -${i} $ifile | tail -1 | cut -f6`
 
 # make directories
-d=/dfs6/pub/public-www/kmcarval/swan_HL60/
+d=/data/homezvol1/kmcarval/220310_hl60/die/
 
 python ${d}swan_die.py $sg $col $cond1 $cond2 $test $fname
