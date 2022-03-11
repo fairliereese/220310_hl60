@@ -14,7 +14,7 @@ fname = sys.argv[6]
 sg = swan.read(sg_fname)
 
 # actually perform the test
-die, genes = sg.die_gene_test(obs_col=col,s
+die, genes = sg.die_gene_test(obs_col=col,
                        obs_conditions=[cond1, cond2],
                        kind=test)
 die.to_csv(fname, sep='\t')
